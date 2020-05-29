@@ -2,10 +2,22 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="diseño web, codigo, programacion, html, css">
+    <meta name="description" content="de un pasaje en la literatura clásica, descubrió la fuente indudable.">
+    <meta name="autor" content="Adison Chire - Desarrollador web">
+
+    <!-- El meta viewport es muy importante para realizar sitios web adaptables a dispositivos moviles -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
+                                   maximum-scale=1.0, minimum-scale=1.0">
+    <!-- width=device-width: Establecemos que el ancho de la pagina sea igual al del dispositivo -->
+    <!-- user-scalable=no: Establecemos que el usuario no puede escalar el sitio web -->
+    <!-- initial-scale=1.0: Establecemos que la pagina tendra un tamaño inicial de 1  -->
+    <!-- maximum-scale=1.0: Establecemos que la pagina tendra un tamaño maximo de 1  -->
+    <!-- minimum-scale=1.0: Establecemos que la pagina tendra un tamaño minimo de 1  -->
     <title>Document</title>
 </head>
 <body>
+    <!-- ...........................TITULARES................ -->
     <h2>TITULARES</h2>
     <h1>Soy el h1</h1>
     <h2>Soy el h2</h2>
@@ -13,15 +25,15 @@
     <h4>Soy el h4</h4>
     <h5>Soy el h5</h5>
     <h6>Soy el h6</h6>
-
+    <!-- ..............................PARRAFOS................ -->
     <h2>PARRAFOS</h2>
     <p> este es un parrafo</p>
     <p>este es otro parrafo</p>
-
+    <!-- .................................ESPACIADOS...................... -->
     <h2>ESPACIADOS</h2>
     <h3>salto de linea</h3>
     <p>Esta a punto de  <br>ocurrir un salto de linea</p>
-
+    <!-- ..................................ETIQUETAS......................... -->
     <h2>ETIQUETAS DE TEXTO</h2>
     <p>
          <b>Esto es negrita o bold </b> 
@@ -49,12 +61,14 @@
          <sup>superscript</sup> -texto pequeño y arriba
          <br><br>
     </p>
+    <!-- ....................................ENLACES ........................ -->
     <h2>ENLACES</h2>
    
     <a target="_blank" href="http://www.google.com"> enlace a google</a>
     <br><br>
     <a target="_blank" href="../../PROYECTO_GATITOS/Sitio_Web_Cat.html"> enlace PROYECTO GATITOS</a>
 
+    <!-- .....................................LISTAS .............................. -->
     <h2>Listas</h2>
     <h3>Listas Desordenadas</h3>
     <ul>
@@ -98,6 +112,7 @@
         <li><a href="#">blog</a></li>
         <li><a href="#">contacto</a></li>
     </ul>
+    <!-- ..............................IMAGENES......................... -->
     <h2>IMAGENES</h2>
     <img src="Imagenes/oficina.jpg" width="200" alt=""><br>
     <img src="../../PROYECTO_GATITOS/IMAGES/monos.jpg" alt="gatito" title="Este es el gatito 1"><br>
@@ -106,5 +121,195 @@
     <a target="_blank" href="http://www.google.com">
         <img  src="Imagenes/oficina.jpg" alt="sitio de google" title="click para abrir google" width="250">
     </a>
+
+    <!-- .............................TABLAS............................ -->
+    <h2>TABLAS - no usado generalmente con html</h2>
+    <table>
+        <tr> <!-- table row -->
+            
+            <th>Nombre:</th>
+            <th>Telefono:</th>
+            <td> escrito con la etiqueta (th)</td>
+        </tr>
+        <tr>
+            <td>Adison Chire</td>
+            <td>123456</td>
+            <td> escrito con la etiqueta (td)</td>
+        </tr>
+        <tr>
+            <td>Alejandro</td>
+            <td>1d554556</td>
+            <td> escrito con la etiqueta (td)</td>
+        </tr>
+    </table>
+    <!-- .........................FORMULARIOS _INPUT...................................... -->
+    <h2>FORMULARIOS - Input</h2>
+    
+    <form action="" method="">
+        <p>type = el tipo de input <br>placeholder = texto que aparece, pero q desaparece al escribir <br>
+        maxlength = cantidad de letras o caracteres admitidos <br> required = invita a lenar el input o el campo <br>
+        readonly = no permite escribir texto alguno <br> disabled = para desabilitar el campo </p>
+        <!--...tipo texto u otro....texto que desaparece al click.....cantidad de letras....-->
+        <!-- INPUT TIPO TEXTO -->
+        <input     type="text" placeholder="nombre:" maxlength="10" id="nombre" required>  required
+        <label for="nombre">Nombre</label>
+        <br><br>
+        <!-- INPUT TIPO PASSWORD -->
+        <input     type="password" placeholder="password:" maxlength="10" id="password" required>  required
+        <label for="nombre">password</label>
+        <br><br>
+
+        <input     type="text" placeholder="apellido:" maxlength="10" readonly name="nombre">  readonly
+        <br><br>
+        <input     type="text" placeholder="blabla:" maxlength="10" disabled name="nombre">   disabled
+        <br><br>
+        <!-- INPUT TIPO EMAIL -->
+        <input     type="email" placeholder="Correo" name="correo"> 
+        <br><br>
+        <!-- INPUT TIPO MENSAJE -->
+        <textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+        <br><br>
+        <!-- DE SELECCION -->
+        <label for="Pais">País    </label>
+        <select name="pais" id="pais">
+            <option value="México">México</option>
+            <option value="Esppaña">España</option>
+            <option value="Perú">Perú</option>
+        </select>
+        <br><br>
+        <!-- INPUT TIPO RADIOBUTTON -->
+        <input type="radio" name="genero" value="hombre" id="hombre"> <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" value="mujer" id="mujer"> <label for="mujer">Mujer</label>
+        <br><br>
+        <!-- INPUT TIPO CHECKBOX -->
+        <input type="checkbox" name="terminos" id="terminos"> <label for="terminos">Términos y condiciones </label>
+        <br><br>
+        <!-- INPUT TIPO COLOR -->
+        <input type="color" name="color">
+        <br><br>
+        <!-- INPUT TIPO FECHA -->
+        <label for="fecha">Ingrese fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha">
+        <br><br>
+        <!-- INPUT TIPO NUMERO -->
+        <input type="number" min="1" max="20">
+        <br><br>
+        <!-- INPUT TIPO RANGO -->
+        <input type="range" min="1" max="10" name="rango">
+        <br><br>
+        <!-- INPUT TIPO SITIO WEB -->
+        <input type="url" name="url" placeholder="Introduzca un sitio web">
+        <br><br>
+        <!-- INPUT TIPO BOTON DE ENVIO -->
+        <input type="submit" value="ENVIAR">
+    </form>
+    <!-- .......................................CITAS DE TEXTO................................... -->
+    <h2>CITAS DE TEXTO - blockquote</h2>
+
+    <h3>Usando (p) parrafo</h3>
+    <p>Contrariamente a la creencia popular, Lorem Ipsum no es simplemente un texto aleatorio. 
+        Tiene raíces en una pieza de literatura latina clásica del 45 a. C., con más de 2000 años de antigüedad.
+        Richard McClintock, profesor de latín en el Hampden-Sydney College en Virginia, buscó una de las palabras 
+        latinas más oscuras, consectetur, de un pasaje de Lorem Ipsum, y al revisar las citas de la palabra 
+        en la literatura clásica, descubrió la fuente indudable. </p>
+
+    <h3>Usando blockquote - no usado frecuentemente</h3>
+    <blockquote>
+        Contrariamente a la creencia popular, Lorem Ipsum no es simplemente un texto aleatorio. 
+        Tiene raíces en una pieza de literatura latina clásica del 45 a. C., con más de 2000 años de antigüedad.
+        Richard McClintock, profesor de latín en el Hampden-Sydney College en Virginia, buscó una de las palabras 
+        latinas más oscuras, consectetur, de un pasaje de Lorem Ipsum, y al revisar las citas de la palabra 
+        en la literatura clásica, descubrió la fuente indudable. 
+    </blockquote>
+    
+    <hr>
+    <h3>Usando (p) parrafo</h3>
+    <p>Contrariamente a la creencia popular, Lorem Ipsum no es simplemente un texto aleatorio. 
+        Tiene raíces en una pieza de literatura latina clásica del 45 a. C., con más de 2000 años de antigüedad.
+        Richard McClintock, profesor de latín en el Hampden-Sydney College en Virginia, buscó una de las palabras 
+        latinas más oscuras, consectetur, de un pasaje de Lorem Ipsum, y al revisar las citas de la palabra 
+        en la literatura clásica, descubrió la fuente indudable. </p>
+    <p>sitio web creado por <cite>(Adison Chire)Esto es una cita</cite></p>
+
+    <h2>ID y CLASS</h2>
+    <p>El ID nos sirve para poder acceder al elemento del DOM de una forma mas facil, 
+        se puede usar con CSS pero no es recomendable, utilizar id para enlazar con javascript, jquery, php.
+        El id no se puede repetir en la pagina</p> 
+
+    <p>Class nos sirve para darle estilos con CSS a uno o varios elementos. Class si se puede repetir en la pagina </p> 
+    
+    <a href="#" id="enlace" class="boton_azul">Enlacito </a>
+    <br><br>
+    <a href="#" id="enlace2" class="boton_azul">Enlacepo</a>
+    <!-- .........................................................AUDIO..................................... -->
+    <h2>AUDIO</h2>
+    
+    <audio controls id="alan_walker">
+        <source src="media/Alan Walker   MIX 2019 BASS  _ (VIDEO  shuffle dance ).mp3" type="audio/mpeg">
+    </audio> <label for="alan_walker">ALAN WALKER</label>
+    <br><br>
+    <audio controls id="desconocidos">
+        <source src="media/027 DESCONOCIDOS - MAU Y RICKY FT. MANUEL TURIZO.mp3" type="audio/mpeg"> 
+    </audio> <label for="desconocidos">DESCONOCIDOS</label>
+    <!--
+    Formato		 	Media Type
+    ==========================
+    MP3 			audio/mpeg
+    Ogg 			audio/ogg
+    Wav 			audio/wav
+
+
+    # Soporte de los navegadores
+
+    Navegador 	MP3 	Wav 	Ogg
+    ================================
+    IExplorer 	SI 		NO 		NO
+    Chrome 		SI 		SI 		SI
+    Firefox 	SI 		SI 		SI
+    Safari 		SI 		SI 		NO
+    Opera 		SI 		SI 		SI
+
+    -->
+    <h2>VIDEO</h2>
+    
+    <video controls id="mama" width="500">
+        <source src="media/VIDEO/¡ FELIZ DÍA DE LA MADRE 2020 ! - Felicitación Virtual Original para el Día de la Madre.mp4" type="video/mp4">
+    </video> <label for="mama">FELIZ DIA MAMÁ</label>
+
+    <!-- 
+    Formato 	Media Type
+    =======================
+    MP4 		video/mp4
+    WebM 		video/webm
+    Ogg 		video/ogg
+
+
+    # Soporte de los Navegadores
+
+    Navegador 	MP4 	WebM 	Ogg
+    ================================
+    IExplorer 	SI 		NO 		NO
+    Chrome 		SI 		SI 		SI
+    Firefox 	SI 		SI 		SI
+    Safari 		SI 		NO 		NO
+    Opera 		SI 		SI 		SI
+
+    -->
+    <h2>IMAGENES SVG</h2>
+    <P>COPIAMOS EL CODIGO (INSPECCIONAR-SOURCE-PRINT) Y PEGAMOSEL ARCHIVO SVG A MI EDITOR PARA EDITARLO</P>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="300" viewBox="0 0 500 500">
+        <image id="Capa_0" data-name="Capa 0" width="500" height="500" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQMAAADxGE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX///8AAABVwtN+AAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAADVJREFUeNrtwTEBAAAAwqD1T+1hDaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbn0AAAGDIqjNAAAAAElFTkSuQmCC"/>
+        <image id="Capa_1" data-name="Capa 1" y="383" width="500" height="117" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAB1AQMAAACCg4EAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEVGnWUAAABZCLQuAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB1JREFUWMPtwQENAAAAwqD3T+3sARQAAAAAAAAANx1AAAFqKqD9AAAAAElFTkSuQmCC"/>
+        <image id="Capa_3" data-name="Capa 3" width="500" height="386" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAGCCAMAAAAhc8FkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABHVBMVEVfuPFgufFhufFiufFiufBjufBjuvBkuvBluvBmuvBmu/Bnu+9ou+9pu+9pvO9qvO9rvO9rvO5svO5tvO5tve5uve5vve5wve5wvu1xvu1yvu1zvu1zv+10v+11v+x2v+x3wOx4wOx5wOx5wOt6wOt6wet7wet8wet9wet9wut+wut+wup/wuqAwuqAw+qBw+qCw+qDw+mExOmFxOmGxOmHxOmHxemHxeiIxeiJxeiKxeiKxuiLxuiMxuiMxueNxueNx+eOx+ePx+eQx+eRx+eRyOaSyOaTyOaUyOaUyeaVyeaVyeWWyeWXyeWXyuWYyuWZyuWayuWayuSay+Sby+Scy+Sdy+Sey+SezOSfzOSfzOOgzOOhzOOhzeMAAAADsmkQAAAAAWJLR0ReBNZhuwAAAAlwSFlzAAALEgAACxIB0t1+/AAAA+NJREFUeNrt0VMWYAcABcEbO5nYmti2bVv730Z28d5HV62gz+mNnkvIMT3I9CDTg0wPMj3I9CDTg0wPMj3I9KBdSo7pQaYHmR5kepDpQaYHmR5ketAuI8f0INODdjk5pgeZHmR6kOlBpgftCnJMD9qV5JgeZHqQ6UGmB5ketKvIMT3I9CDTg0wPMj3I9KBdTY7pQaYHmR5kepDpQaYH7RpyTA8yPcj0oF1LjulBpgftOnJMDzI9yPQg04NMDzI9aNeTY3qQ6UGmB5keZHrQbiDH9CDTg0wPMj1oN5Kzm8gxPcj0INODTA8yPWgXyNnZARxvZwdwvJ0dwPF2MzmmB+0WckwPMj3I9CDTg3YrObuNHNODTA8yPcj0oN1OjulBpgeZHmR60O4gx/Qg04NMDzI9yPSg3UnO7iLH9CDTg0wP2t3kmB5kepDpQaYH7R5yTA8yPcj0INODdi85pgeZHrT7yDE9aPeTY3qQ6UGmB5ketAfIMT3I9CDTg0wP2oPkmB5kepDpQaYH7SFydnYAx9vZARxvZwdwvJ0dwPH2MDmmB5keZHqQ6UG7SI7pQaYH7RFy9ig5e4wc04NMDzI9aI+TY3qQ6UGmB5ketCfIMT3I9CDTg0wP2pPkmB60p8gxPWhPk2N60J4hx/Qg04P2LDmmB5keZHqQ6UF7jhzTg0wP2vPk7AVyTA8yPcj0INOD9iI5OzuA4+3sAI63swM43s4O4Hh7iRzTg0wPMj3I9KC9TI7pQaYHmR60V8gxPcj0INODTA/aq+SYHmR6kOlBpgftNXL2OjmmB5ketDfI2ZvkmB5kepDpQXuLHNODTA8yPcj0oL1NjulBpgftHXJMD9q75JgeZHqQ6UGmB+09ckwP2vvkmB5ketA+IMf0INODTA/ah+TsI3JMDzI9yPQg04P2MTmmB5keZHqQ6UH7hBzTg0wPMj3I9KB9Ss4+I8f0INODTA8yPWifk2N6kOlBpgeZHrQvyDE9yPQg04NMD9qX5JgeZHrQviLH9CDTg/Y1OaYHmR5kepDpQfuGnH1LjulBpgeZHmR6kOlB+44c04NMDzI9aN+TY3rQfiDH9CDTg0wPMj3I9KD9SM7ODuB4OzuA4+3sAI63swM43s4O4Hj7iRzTg0wPMj1oP5NjetB+IWe/kmN6kOlBpgeZHmR6kOlB+40c04NMDzI9yPQg04NMD9rv5JgeZHqQ6UGmB5keZHrQ/iDH9KD9SY7pQaYHmR5kepDpQaYH7S9yTA/a3+SYHmR6kOlBpgeZHmR60P4hx/Qg04NMDzI9yPQg04NMDzI9yPSg/UuO6UGmB5keZHrQ/iPnfxRhcgPxLWn6AAAAAElFTkSuQmCC"/>
+        <image id="Capa_4" data-name="Capa 4" x="50" y="281" width="129" height="131" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACDAQMAAACQpuoYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX///8AAABVwtN+AAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAABlJREFUSMftwYEAAAAAw6D5Ux/hAlUBAPANCTYAAXd0MU8AAAAASUVORK5CYII="/>
+        <image id="Capa_5" data-name="Capa 5" x="31" y="202" width="174" height="79" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAABPCAMAAABFyg77AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAAAySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEySiEAAAA22sxPAAAAinRSTlMABJV/Ebsm2UXua/sFlxK9KNtH8G/8mRO/KtxJcgacFMIs3kvydAeeFsMt307zd/2ixS/hUAF5CKQYxzHjU/R7/qYayTNV9QmpG8w05Vf2gQurHM035lr3ha4dzznnXAKHDLAf0TvpX/iJDbIh0jzqYvkDjA61I9Q+62SPD7fWQe1n+pIQuSXXQ2nwH0qmAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAflJREFUaN7V09VSQzEUhWHcWrQUd3c/FHfX4k5xd3fX/dRcMsww0+6cJDtZD7Dmu/m9vETO28dX6D/f+fkD6OMNCATQxxsUDKCPN8QCoI3XGgq/U94bFg6gjzciEkAfb5QNQB9vtB1AG681Bv6dmt7YOAB9vPEJAPp4E20A+niT7ADaeJNTwN0U8qamudUq5E3P8ECrjDczyyOtIt5su4daFbw5uR5jFfDm5WO01N6CQpyW1ltUjNVSektK8Voyb04ZC5bKm1fOqCXxVlQyawm8VQyRkXmNaqbIiLyOGpNYqd7aOvNaed76Bh5aWd7GJj5aKV6juYWXVoLX0coPK97b1s5VK9jbwSkyOd7OLu5acV7Dl2Nkwr3dPUKwgry9faK0Irz9A+K0/L2DQyK1nL3GsJjIxHidI6KxPL2jYxK03LzjE1K0nLyTU5K0PLzGtPDIOHqdMxKxpr2zc3K15rzzC7K1ZryL8iIz73UtUWBZvcsrRFom7+oamZbBu75BqEV7N7dItTiva5sYi/Lu7FJbMd69fWopxntwSO3EeI+OqZUI78kpNRHjPTunBmK8F5fUPIz36poah/HeKBSZW+/JLbUL4727p1ZhvBcP1CaM9/GJWoTxPr9QexBe71dqDMb79k5NwXg/PqkhGO+X4pH99X5bzN/I8/4AlDNkUmERl9EAAAAASUVORK5CYII="/>
+        <image id="Capa_6" data-name="Capa 6" x="100" y="368" width="29" height="44" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAsAQMAAACjeyFEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEUySiEAAADmGJfaAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAxJREFUCNdjYBi+AAAA3AABIOexvwAAAABJRU5ErkJggg=="/>
+        <image id="Capa_7" data-name="Capa 7" x="63" y="291" width="104" height="69" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABFCAMAAACR8FN7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeFBMVEUAAADI1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t7I1t4AAAA64H6KAAAAJnRSTlMAB0iY0fAEZubpcgYnKDXt7jcF0nQIVFWf0/HU1ep1NB7Nzh9oZ+9S214AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAA3klEQVRYw+3WyQ6CMBCA4SItUhVUylLrvs37P6JcjIKUhGSmF+e/ly8NZagQE4tmsVSgZDyLpi6dUjJP4Z1eLMmclYTvZEbk5GvottmSOJmCfopiT4WE30yBD5UwVInuVHoQ0hU2VMNwDTZkPZDFhowH2mFDygMpbAh8YUPO4zhsaO+BDthQsFPXhPqOPJPhiD4ZPLPuhO6Em97B/kdCnPuvSeckjhCXa8e53Ymc9hb0+NyC0mdC5rRVtTUOnLE1/rnmOI6jCsbCfBRDDDHEEEMMMcQQQwwxxND/QKO9AA6PXw6fCQ8oAAAAAElFTkSuQmCC"/>
+        <image id="Capa_2" data-name="Capa 2" x="31" y="30" width="105" height="105" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAABpCAMAAAAOXP0IAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEUAAADo6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i3o6i0AAAC9+UQxAAAAbXRSTlMACzZjhKTB1Ofu+xhemdX9K4HO/oIScNIqnPgvsTAgqyQJ9kLc3QiSKFLx8lN7fAOeBq60tQGtingp05OGIfeqMbKzoBNx0SzP0Bpfm9ZkYoWlwtjp8Prov8CfhwpEVIyhffOUQ/msNS0MN6b8o6U6NAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAMKSURBVGjevdppX9pAEAfgATkFAQ0gUC0iClRtPWvl0FoVWhWo4tUitLWX53z/t02AKldkk+zO/z08vywku5kZAOaYzEMWq83ucA7jsNNht1ktQ2YT+8cZ43KPeLzYG69nxO3ix/hGxyRUjzTm9/FgAsFxHJzxYMCgEwpHGBwlkXDIgPNiQmJ0Gqs4ManTeRnV4jSs6JQOJ2aZ1ugombbEtELxGR2Oktm4JieR1LpwbUuYTLBDKbtuR4k9xQq9mjMEIc4vsEGv9a/c4wq+YXAWlww7SpYWB0HLK1wgxJXlAdAqJwhx7VnqrZUbhLj+3AK+4wjJv5U6tMEVQtxQgxaM/707I6ncVymjN2xv5tL9oESGO4SY6fcMTAqAELO9UJz3j9SM1LOJxPTuR4My07015gRBiLlOaHNLmLS12SG9FwYhRtuhSTF/h2ak7Tbpg0AIcecJCom8JPmink63fLZZ9ez+h/ZYz956E9lrSUHBEGK+JRWES5km5BMOIX5sSKMEkr8hfSKQ9hXoQOzN1Ix0IEuHBBDioSwVSaSiLHlIpJJcOfEa/xqGeE1gJoEQzVAmkj7DEZF0BMdE0jHYiKQKnBBJJ3BKJJ3CGZF0BudE0jkQQYiE10T3O10QSRdQIpJK8IVI+kr43KN7llPtT0OEey7dOYLubER03guTnmHpzuWwTyAViN+f6N4J6d5zCd/d6eoRUBUsPdZYCOtGsCNUaquFwTZZfQ+iAqWOmiVhHRYuhUmXXVXsmrB6ea27NF8X1AOo97YbskKkPn0NiIno1dj7tuHT89yh+b79JxE9tW+gErI+IcB3rtAPdYiwn0vXoybsu8uzBHw24OrAWQI5VxzmI64YHOW+MnoL/2Sc+TA+x5JmheR+ddbAbM4vbSNHv2d1QrN1TQ4oM1R6Nvw/uZpWSM7UX81zYetTOhwl16uaZt3WrnU6Sm6qzPN7uzcGHCWBPNNMYn7PoNOIz//8nGWBz5xlMy53sdR3drQU5jk72srtXTl3X/E4nA/44LzwVO5z5btb9o//A/RhTCB+frn6AAAAAElFTkSuQmCC"/>
+      </svg>
+      
+
+
+
 </body>
 </html>
