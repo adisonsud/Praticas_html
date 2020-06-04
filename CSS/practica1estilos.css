@@ -1,0 +1,35 @@
+/* ...............SELECTOR UNIVERSAL
+*{
+    color: red;
+} */
+
+/* h1{
+    color: saddlebrown;
+} */
+/* ...............Selectores descendentes */
+/* div article p{
+    font-size: 20px;
+}
+
+.grande{
+    font-size: 30px;
+}
+
+div > p{
+    font-size: 60px;
+}
+
+input[type]{}
+input[type="text"]{} */
+
+/* ...............FONDOS */
+
+body {
+    /* background: #04B4AE; */
+    background: url("../Imagenes/bg-small.jpg");
+
+    /* background-repeat: */
+    /* background-repeat: no-repeat; para que nose repitan las imagenes y solo quede una */
+    /* background-repeat: repeat-x; se repite en el eje x */
+    /* background-repeat: repeat-y; se repite en el eje y */
+}
