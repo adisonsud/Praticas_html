@@ -1,4 +1,4 @@
-/* ...............SELECTOR UNIVERSAL
+/* ................................................................SELECTOR UNIVERSAL
 *{
     color: red;
 } */
@@ -6,7 +6,7 @@
 /* h1{
     color: saddlebrown;
 } */
-/* ...............Selectores descendentes */
+/* ..............................................................Selectores descendentes */
 /* div article p{
     font-size: 20px;
 }
@@ -22,14 +22,77 @@ div > p{
 input[type]{}
 input[type="text"]{} */
 
-/* ...............FONDOS */
+/* ......................................................................FONDOS */
 
-body {
-    /* background: #04B4AE; */
-    background: url("../Imagenes/bg-small.jpg");
+/* Valores que podemos usar en las propiedades
+background: repeat | no-repeat | repeat-x | repeat-y;
 
-    /* background-repeat: */
-    /* background-repeat: no-repeat; para que nose repitan las imagenes y solo quede una */
-    /* background-repeat: repeat-x; se repite en el eje x */
-    /* background-repeat: repeat-y; se repite en el eje y */
+background-size: auto | 100px 100px | 100% 100% | cover: tamaña completo | contain;
+
+Explicacion de valores para background-size
+	auto: Valor por defecto, el ancho y alto de la imagen.
+	ancho y alto: Ancho y alto que nosotros le especifiquemos, si solo ponemos el primer valor, el segundo sera automatico.
+	porcentaje:  Porcentaje del ancho y alto que tendra el fondo tomando en cuenta el contenedor padre.
+	cover: Ajusta el ancho de la imagen para que avarque el ancho del contenedor padre.
+	contain: Ajusta la imagen para que avarque el ancho y alto del contenedor padre.
+
+background-attachment: scroll | fixed ;
+*/
+
+/* body { 
+
+     background: #04B4AE; 
+    
+
+     background-repeat: 
+    background-repeat: no-repeat; para que nose repitan las imagenes y solo quede una
+    background-repeat: repeat-x; se repite en el eje x
+    background-repeat: repeat-y; se repite en el eje y 
+    background: url("../Imagenes/watercolor.png");
+    background-repeat: repeat;
+     background-size: cover; 
+    background-attachment: fixed;
+     background-position: center center; 
+} */
+ /* .fondo{
+    width: 600px;
+    height: 600px;
+    background: url("../Imagenes/bg.jpg") #000;
+    background-repeat: no-repeat;
+    background-size: 200px;
 }
+  */
+/* -----------------------------------------------------------------Tipografia */
+/* h1{
+    font-family: Arial, Helvetica, sans-serif;
+     background-color: red;
+}
+article p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+
+ /* .................................................................UNIDADES DE COLOR  */
+
+
+ /* .caja{
+     height: 300px;
+     width: 300px;
+     por palabras clave
+     background: cadetblue;
+     por rgb
+    background: rgb(46,66 ,66 );
+ } */
+ /* .................................................................MODELOS DE CAJA  */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.caja{
+    height: 300px; 
+    width: 100px;
+    background-color: chartreuse;
+    margin-bottom: 10px;
+}
+ 
