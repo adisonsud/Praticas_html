@@ -195,7 +195,7 @@ div{
 } */
 
 /* -------------------------------------------------------POSICIONAMIENTO DE CAJAS */
-
+/* 
 *{
     margin: 0;
     padding: 0;
@@ -209,8 +209,420 @@ body{
     height: 200px;
     background: blueviolet;
     margin: 20px;
+    
 }
-.posicionada{
+.static{
     background: cadetblue;
-    position: relative;
+    position: static;
 }
+.relative{
+    background: chocolate;
+    position: relative;
+    left: 300px;
+    top: 0;
+}
+.absolute{
+    background: darkblue;
+    position: absolute;    
+}
+.fixedo{
+    background: darkred;
+    position: fixed;
+    right: 40%;
+    bottom: 10%;
+    color: white;
+}
+.cajaPadre{
+    background: yellow;
+    position: relative;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+}
+.absolute2{
+    
+    width: 50px;
+    margin: 20px;
+    background: teal;
+    position: absolute;
+    right: ;
+    bottom: ;
+    color: white;
+} */
+
+/* --------------------------------------------POSICIONAMIENTO DE CAJAS Y FLOTANTE*/
+/* 
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cajaPadre{
+    background: chocolate;
+    width: 700px;
+    overflow: hidden;
+}
+.caja{
+    width: 200px;
+    color: #fff;
+    font-size: 38px;
+    height: 200px;
+    background: crimson;
+    margin: 20px;
+}
+.uno{
+    float: left;
+}
+.dos{
+    float: right;
+}
+.tres{
+    float: left;
+}
+.cuatro{
+    float: left;
+} */
+/* clear no usado normalmente.. en lugar usar overflow:hidden;
+.clear{
+    clear: both;
+} */
+/* 
+.articulo{
+    width: 800px;
+    background: #ccc;
+}
+.articulo img{
+    float: left;
+} */
+
+/* --------------------------------------------------------------------visualizacion*/
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+div, a {
+    background: #ccc;
+}
+a{
+    background: salmon;
+    color: seagreen;
+    padding: 20px;
+    display: inline-block;
+} */
+/* a {
+    display: flex;    propiedad que elimina lo ingresado
+    visibility: hidden;   propiedad que oculta lo ingresado
+} */
+/* .caja{
+    color: forestgreen;
+    background: darkkhaki;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+} */
+/* display [inline - block - none - inline-block - flex] */
+/* 
+.contenedor{
+    width: 600px;
+    background: #ccc;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.izquierda{
+    float: left;
+}
+.derecha{
+    float: right;
+}
+
+.contenedor2 .caja{
+    width: 150px;
+    height: 150px;
+    position: relative;
+} 
+.azul{
+    background: darkblue;
+    z-index: 8;
+}
+.gris{
+    background: darkgray;
+    right: 50px;
+    bottom: 80px;
+    z-index: 10;
+} */
+
+/* -------------------------------------------------PRACTICA GALERIA DE IMAGENES */
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+.galeria{
+    width: 100%;
+    
+}
+.galeria img{
+    vertical-align: top;
+    width: 395px;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid white;
+    opacity: 0.5;
+}
+.galeria img:hover{
+    opacity: 1;
+    border: 1px solid chartreuse;
+} */
+
+/* -----------------------------------------------------------SOMBRAS */
+
+/* .texto{ */
+    /* text-shadow: (posicion horizontal de la sombra) (posicion vertical)(tamaño de la sombra) */
+    /* text-shadow: 0 0 10px #000; */
+    /* color: white;
+    text-shadow: 2px 0 10px blue; */
+
+/* }
+.caja{
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .5);
+} */
+
+/* -----------------------------------------------------------SOMBRAS */
+/* 
+div{
+    background: blueviolet;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+}
+.caja1{
+    border: 7px solid #000;
+    border-radius: 20px;
+}
+.caja2{
+    border: 7px dotted #000;
+    border-radius: 0 10px 30px 50px;
+}
+.caja3{
+    border: 7px dashed #000;
+    border-radius: 100px;
+}
+.caja4{
+    border: 7px double #000;
+    border: 7px groove #000;
+    border: 7px ridge #000;
+    border: 7px inset #000;
+    border: 7px outset #000;
+} */
+
+/* -----------------------------------------------------------PSEUDO-CLASES */
+/* body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    background: aqua;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: black;
+
+}
+a:hover{
+    background:rgb(0, 190, 190);
+    padding: 25px 35px;
+} */
+/* active --- se activa cuando lo tenemos presionado */
+/* a:active{
+    background: rgb(65, 75, 75);
+} */
+/* visited--- cambia el aspecto cuando se visita el sitio */
+/* a:visited{
+    color: brown;
+} */
+/* div{
+    width: 500px;
+}
+div p:hover{
+    background: #000;
+    color: #fff;
+}
+div p:first-line{
+    background: #3a3a3a;
+    color: #fff;
+    font-size: 20px;
+}
+div p:nth-child(2){
+    background: chartreuse;
+    padding: 10px;
+} */
+
+
+/* -----------------------------------------------------------PSEUDO-ELEMENTOS */
+/* 
+p::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+}
+p::first-line{
+    background: cornflowerblue;
+    line-height: 40px;
+}
+*::selection{
+    background: chartreuse;
+    color: cornsilk;
+}
+.caja{
+    background: coral;
+    height: 150px;
+    width: 150px;
+}
+.caja::before{
+    content: 'contenido antes de la caja';
+    display: block;
+    background: #3a3a3a;
+    color: #fff;
+    position: relative;
+    left: 50px;
+}
+.caja::after{
+    content: 'lala';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: crimson;
+    position: relative;
+    left: 200px;
+} */
+
+/* -----------------------------------------------------------------LISTAS */
+/* 
+ul, ol{
+    list-style: none;
+    padding: 0;
+} */
+
+/* Graficos:
+list-style: none | disc | circle | square
+
+Numericos:
+list-style: decimal | decimal-leading-zeo | lower-roman | upper-roman |
+            lower-latin | upper-latin */
+
+
+/* ul{
+    list-style-image: url('../Imagenes/tick.png');
+    
+}
+ol{
+    list-style: lower-latin;
+}
+.menu{
+    background: #035c21;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.menu li{
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    
+}
+.menu li a{
+    display: block;
+    padding: 15px;
+    color: seashell;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background: rgb(15, 216, 139);
+} */
+
+/* -------------------------------------------------------------DISEÑO DE MENU DE NAVEGACION */
+/* body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .menu{
+    list-style: none;
+    padding: 0;
+    background: black;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    
+    
+    
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    ;
+    
+}
+
+.menu li a{
+    
+    text-decoration: none;
+    color: blanchedalmond;
+    display: block;
+    padding: 20px;
+}
+.menu li a:hover{
+    background: rgb(190, 126, 41);
+} */
+
+/* -------------------------------------------------------------------------TABLAS */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table, th, td{
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+}
+
+th{
+    padding: 10px;
+    background: rgb(2, 104, 82);
+    color: rgb(255, 240, 220);
+}
+td{
+    padding: 15px;
+    
+}
+tr:hover{
+    background: rgba(129, 133, 132, 0.356);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
