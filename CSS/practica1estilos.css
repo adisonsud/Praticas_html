@@ -675,7 +675,7 @@ body{
 
 /* --------------------------------------------------------------PROPIEDAD TRANSFORM */
 .caja{
-    background: sandybrown;
+    background: springgreen;
     width: 200px;
     height: 200px;
     transform: translate(300px, 30px);
