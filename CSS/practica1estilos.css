@@ -674,21 +674,83 @@ body{
 } */
 
 /* --------------------------------------------------------------PROPIEDAD TRANSFORM */
-.caja{
+/* .caja{
     background: springgreen;
     width: 200px;
     height: 200px;
-    transform: translate(300px, 30px);
-}
+    transform: translate(200px) scale(1,1) rotate();
 
+} */
+/* transform: translate(300px, 30px); */
+    /* transform: scale(3,3); */
+    /* transform: rotate(20deg); */
+    /* transform: skew(20deg,0deg); */
 /* COSAS QUE PODEMOS HACER CON TRANSFORM 
 - traslate= trasladar elementos
 - escalar elementos
 - rotar elementos
 - sesgar elementos*/
 
+/* -------------------------------------------------------------------TRANSICIONES */
 
+	/* Velocidad de Curva
+	ease - inicio lento, despues rapido y termina lento
+	linear - misma velocida de inicio a fin
+	ease-in - inicio lento
+	ease-out - final lento
+	ease-in-out - inicio lento y final lento
+	*/
+/* .caja{
+    width: 200px;
+    height: 200px;
+    background: #21295c;
+    transition: all .3s ease; */
+    /* transition-delay: 1s; */
+/* }
+    background: #9eb3c2;
+    width: 400px;
+    height:  400px;
+    transform: rotate(360deg);
 
+} */
+
+/* -------------------------------------------------------------------ANIMACIONES */
+/* @keyframes colores{
+    from{background: #9eb3c2;}
+    to{background: #21295c;}
+} */
+
+@keyframes colores{
+    0%{background: #9eb3c2;}
+    25%{background: #1C7293;  width: 300px;}
+    50%{background: #065A82;  width: 400px;}
+    75%{background: #1B3B6F;  width: 500px;}
+    100%{background: #21295c; width: 600px;}
+}
+
+/* @keyframes movimientos{
+    from{transform: translate(0px);}
+    to{transform: translate(500px);}
+} */
+
+    @keyframes movimientos{
+    0%{transform: translate(0px);}
+    50%{transform: translate(500px);}
+    100%{transform: translate(0px);}
+    
+    }
+.caja{
+    width: 200px;
+    height: 200px;
+    background: #9eb3c2;
+    
+    animation-name: colores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+    animation-name: movimientos;
+    
+}
 
 
 
